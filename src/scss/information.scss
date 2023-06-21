@@ -1,0 +1,69 @@
+.information {
+  @include adaptiveValue("padding-top", 130, 120);
+  @include adaptiveValue("padding-bottom", 130, 40);
+  background-color: #f4f4f4;
+  @media (max-width: $mobile) {
+    padding-top: rem(195);
+  }
+  // .information__container
+
+  &__container {
+  }
+
+  // .information__title
+
+  &__title {
+    &:not(:last-child) {
+      @include adaptiveValue("margin-bottom", 40, 20);
+    }
+  }
+
+  // .information__headline
+
+  &__headline {
+    color: $additionalColor;
+    font-size: rem(24);
+    font-weight: 600;
+    &:not(:last-child) {
+      @include adaptiveValue("margin-bottom", 20, 10);
+    }
+  }
+  // .information__list
+
+  &__list {
+    &:not(:last-child) {
+      @include adaptiveValue("margin-bottom", 20, 10);
+    }
+  }
+
+  // .information__item
+
+  &__item {
+    list-style: disc;
+    font-family: sans-serif;
+    line-height: math.div(22, 18);
+    font-size: rem(16);
+    &:not(:last-child) {
+      @include adaptiveValue("margin-bottom", 15, 5);
+    }
+
+    @media (max-width: $mobile) {
+      font-size: rem(14);
+    }
+  }
+
+  // .information__link
+
+  &__link {
+    color: $additionalColor;
+    font-size: rem(16);
+    font-weight: 600;
+    transition: color 0.3s ease 0s;
+
+    @media (any-hover: hover) {
+      &:hover {
+        color: #1cb8a3c0;
+      }
+    }
+  }
+}

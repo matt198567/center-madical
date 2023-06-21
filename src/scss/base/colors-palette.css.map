@@ -1,0 +1,9 @@
+{
+    "version": 3,
+    "mappings": "AAGA,AAAA,KAAK,CAAC;EAGL,SAAS,CAAA,QAAC;EACV,WAAW,CAAA,QAAC;EACZ,QAAQ,CAAA,QAAC;EACT,SAAS,CAAA,QAAC;EAIV,YAAY,CAAA,QAAC;EACb,cAAc,CAAA,QAAC;EACf,WAAW,CAAA,QAAC;EACZ,YAAY,CAAA,QAAC;EAIb,cAAc,CAAA,QAAC;EACf,gBAAgB,CAAA,QAAC;EACjB,aAAa,CAAA,QAAC;EACd,cAAc,CAAA,QAAC;CAEf",
+    "sources": [
+        "colors-palette.scss"
+    ],
+    "names": [],
+    "file": "colors-palette.css"
+}

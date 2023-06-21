@@ -1,0 +1,79 @@
+// Заголовки, загальні БЕМ блоки та інше...
+.page {
+  // .page__hero
+
+  &__hero {
+  }
+
+  // .page__advantages
+
+  &__advantages {
+  }
+
+  // .page__reviews
+
+  &__reviews {
+  }
+
+  // .page__services
+
+  &__services {
+  }
+
+  // .page__documentation
+
+  &__documentation {
+  }
+
+  // .page__services
+
+  &__services {
+  }
+
+  // .page__contacts
+
+  &__contacts {
+  }
+
+  // .page__branchone
+
+  &__branchone {
+  }
+
+  // .page__branchtwo
+
+  &__branchtwo {
+  }
+
+  // .page__doctors
+
+  &__doctors {
+  }
+
+  // .page__information
+
+  &__information {
+  }
+}
+
+.text {
+  line-height: math.div(27, 16);
+}
+
+.title {
+  font-family: Poppins;
+  font-weight: 600;
+  line-height: 106.71%;
+  letter-spacing: 0.5%;
+  color: $mainColor;
+  @include adaptiveValue("font-size", 40, 30);
+  // &_s64 {
+  //   @include adaptiveValue("font-size", 64, 40);
+  // }
+  // &_s56 {
+  //   @include adaptiveValue("font-size", 56, 35);
+  // }
+  span {
+    color: $purpleColor;
+  }
+}

@@ -1,0 +1,133 @@
+.branchone {
+  @include adaptiveValue("padding-top", 130, 120);
+  @include adaptiveValue("padding-bottom", 130, 40);
+  background-color: #f4f4f4;
+  // .branchone__container
+
+  &__container {
+  }
+
+  // .branchone__title
+
+  &__title {
+    &:not(:last-child) {
+      @include adaptiveValue("margin-bottom", 40, 20);
+    }
+  }
+
+  // .branchone__wrapper
+
+  &__wrapper {
+  }
+
+  //  .branchone__headline
+
+  &__headline {
+    font-weight: 600;
+    font-size: rem(22);
+    color: $otherColor;
+    line-height: math.div(22, 18);
+    &:not(:last-child) {
+      margin-bottom: rem(10);
+    }
+  }
+  // .branchone__text
+
+  &__text {
+    font-family: sans-serif;
+    line-height: math.div(22, 18);
+    font-size: rem(16);
+
+    @media (max-width: $mobile) {
+      //   font-family: Roboto;
+      font-weight: 400;
+    }
+    &_additional {
+      @include adaptiveValue("margin-bottom", 30, 10);
+    }
+  }
+
+  // .branchone__inner
+
+  &__inner {
+    // display: grid;
+    // grid-template-columns: repeat(2, 1fr);
+    // grid-template-rows: repeat(2, 1fr);
+    // gap: 32px;
+    display: grid;
+    align-items: center;
+    gap: rem(10);
+    @include adaptiveValue("margin-top", 60, 20);
+    @include adaptiveValue("margin-bottom", 60, 20);
+
+    @media (min-width: $tablet) {
+      grid-template-columns: 1fr percent(980, 1440);
+    }
+  }
+
+  // .branchone__image
+
+  &__image-ibg {
+    padding-bottom: percent(240, 250);
+    flex: 0 0 percent(240, 250);
+    @media (max-width: $tablet) {
+      &:not(:last-child) {
+        margin-bottom: rem(20);
+      }
+    }
+    img {
+      max-width: 100%;
+    }
+  }
+
+  // .branchone__list
+
+  &__list {
+    font-family: sans-serif;
+    font-size: rem(16);
+    @include adaptiveValue("margin-top", 20, 10);
+    @include adaptiveValue("margin-left", 40, 20);
+    @media (max-width: $mobile) {
+      //   font-family: Roboto;
+      font-weight: 400;
+    }
+  }
+
+  // .branchone__item
+
+  &__item {
+    &:not(:last-child) {
+      margin-bottom: rem(10);
+    }
+  }
+
+  // .branchone__wrap
+
+  &__wrap {
+    display: flex;
+    align-items: center;
+    gap: rem(5);
+
+    &:not(:last-child) {
+      margin-bottom: rem(10);
+    }
+  }
+
+  // .branchone__link
+
+  &__link {
+    font-weight: 600;
+    color: $otherColor;
+    transition: color 0.3s ease 0s;
+
+    @media (any-hover: hover) {
+      &:hover {
+        color: #597797;
+      }
+    }
+  }
+}
+
+.body-spollers {
+  background-color: #fff;
+}
