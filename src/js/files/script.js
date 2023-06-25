@@ -153,10 +153,10 @@ const buttons = document.querySelectorAll(".services__btn");
 const spollers = document.querySelectorAll(".spollers");
 
 // Скрываем все элементы spollers__item, кроме первого активного
-for (let i = 1; i < spollers.length; i++) {
-  const spoller = spollers[i];
-  spoller.style.display = "none";
-}
+// for (let i = 1; i < spollers.length; i++) {
+//   const spoller = spollers[i];
+//   spoller.style.display = "none";
+// }
 
 // Добавляем обработчики событий клика к каждой кнопке
 buttons.forEach((button, index) => {
@@ -187,6 +187,20 @@ buttons.forEach((button, index) => {
     button.classList.add("active");
     spollers[0].style.display = "block";
   }
+  // Проверяем, находится ли текущий URL-адрес на странице, где нужно скрывать спойлеры
+  if (window.location.pathname === "./services.html") {
+    // Скрываем все элементы spollers__item, кроме первого активного
+    for (let i = 1; i < spollers.length; i++) {
+      const spoller = spollers[i];
+      spoller.style.display = "none";
+    }
+  }
+  // Скрываем все элементы spollers__item при загрузке страницы
+  spollers.forEach((spoller, i) => {
+    if (i !== 0) {
+      spoller.style.display = "none";
+    }
+  });
 });
 
 //========================================================================================================================================================

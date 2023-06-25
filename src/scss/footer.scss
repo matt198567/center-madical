@@ -92,12 +92,23 @@
 
   &__mail {
     color: #1061be;
+    transition: color 0.3s ease 0s;
+
+    @media (any-hover: hover) {
+      &:hover {
+        color: #3283e0;
+      }
+    }
   }
 
   // . main-footer__heart
 
   &__heart {
     display: flex;
+
+    @media (max-width: $mobile) {
+      justify-content: center;
+    }
   }
 
   // .main-footer__left

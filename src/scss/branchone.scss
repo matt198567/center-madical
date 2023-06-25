@@ -15,6 +15,22 @@
     }
   }
 
+  // .branchone__titletwo
+
+  &__titletwo {
+    font-family: sans-serif;
+    font-weight: 600;
+    font-size: rem(18);
+    color: $otherColor;
+
+    &:not(:last-child) {
+      @include adaptiveValue("margin-bottom", 20, 10);
+    }
+
+    &_else {
+      @include adaptiveValue("margin-top", 20, 10);
+    }
+  }
   // .branchone__wrapper
 
   &__wrapper {
@@ -43,7 +59,10 @@
       font-weight: 400;
     }
     &_additional {
-      @include adaptiveValue("margin-bottom", 30, 10);
+      @include adaptiveValue("margin-bottom", 20, 10);
+    }
+    &_add {
+      @include adaptiveValue("margin-top", 20, 10);
     }
   }
 
@@ -108,6 +127,10 @@
     align-items: center;
     gap: rem(5);
 
+    @media (max-width: $mobile) {
+      flex-direction: column;
+    }
+
     &:not(:last-child) {
       margin-bottom: rem(10);
     }
@@ -120,6 +143,10 @@
     color: $otherColor;
     transition: color 0.3s ease 0s;
 
+    @media (max-width: $mobile) {
+      font-size: rem(18);
+    }
+
     @media (any-hover: hover) {
       &:hover {
         color: #597797;
@@ -130,4 +157,21 @@
 
 .body-spollers {
   background-color: #fff;
+}
+
+.branchtwo {
+  // .branchtwo__image-ibg
+
+  &__image-ibg {
+    padding-bottom: percent(240, 280);
+    flex: 0 0 percent(240, 280);
+    @media (max-width: $tablet) {
+      &:not(:last-child) {
+        margin-bottom: rem(20);
+      }
+    }
+    img {
+      max-width: 100%;
+    }
+  }
 }

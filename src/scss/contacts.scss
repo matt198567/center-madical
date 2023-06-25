@@ -21,8 +21,10 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    border-bottom: 1px solid rgba(145, 145, 145, 0.1);
-    padding: rem(20) rem(0);
+    padding: rem(10) rem(0);
+    &:not(:last-child) {
+      border-bottom: 1px solid rgba(145, 145, 145, 0.1);
+    }
   }
 
   // .contacts__inner
@@ -39,6 +41,7 @@
   // .contacts__text
 
   &__text {
+    font-family: sans-serif;
     @media (max-width: $mobile) {
       &:nth-of-type(2) {
         display: none;
@@ -59,6 +62,13 @@
     font-family: Roboto;
     font-weight: 400;
     white-space: nowrap;
+    transition: 0.3s ease 0s;
+
+    @media (any-hover: hover) {
+      &:hover {
+        color: gray;
+      }
+    }
   }
 }
 .title {
