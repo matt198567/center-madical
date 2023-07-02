@@ -27,10 +27,10 @@ import "../../scss/base/swiper.scss";
 function initSliders() {
   // Список слайдерів
   // Перевіряємо, чи є слайдер на сторінці
-  if (document.querySelector(".reviews__slider")) {
+  if (document.querySelector(".administration__slider")) {
     // Вказуємо склас потрібного слайдера
     // Створюємо слайдер
-    new Swiper(".reviews__slider", {
+    new Swiper(".administration__slider", {
       // Вказуємо склас потрібного слайдера
       // Підключаємо модулі слайдера
       // для конкретного випадку
@@ -58,7 +58,7 @@ function initSliders() {
       // Пагінація
 
       pagination: {
-        el: ".slide-reviews__dotts",
+        el: ".slide-administration__dotts",
         clickable: true,
       },
 
@@ -133,7 +133,7 @@ function initSliders() {
       // Пагінація
 
       pagination: {
-        el: ".slide-reviews__dotts",
+        el: ".slide-administration__dotts",
         clickable: true,
       },
 
@@ -168,6 +168,80 @@ function initSliders() {
         },
         1268: {
           slidesPerView: 3,
+          spaceBetween: 30,
+        },
+      },
+
+      // Події
+      on: {},
+    });
+  }
+  if (document.querySelector(".hero__slider")) {
+    // Вказуємо склас потрібного слайдера
+    // Створюємо слайдер
+    new Swiper(".hero__slider", {
+      // Вказуємо склас потрібного слайдера
+      // Підключаємо модулі слайдера
+      // для конкретного випадку
+      modules: [Navigation, Pagination, Autoplay],
+      observer: true,
+      observeParents: true,
+      slidesPerView: 1,
+      spaceBetween: 20,
+      // autoHeight: true,
+      speed: 800,
+
+      //touchRatio: 0,
+      //simulateTouch: false,
+      //loop: true,
+      //preloadImages: false,
+      //lazy: true,
+
+      // Ефекти
+      effect: "fade",
+      autoplay: {
+        delay: 3000,
+        disableOnInteraction: false,
+      },
+
+      // Пагінація
+
+      pagination: {
+        el: ".slide-administration__dotts",
+        clickable: true,
+      },
+
+      // Скроллбар
+      /*
+			scrollbar: {
+				el: '.swiper-scrollbar',
+				draggable: true,
+			},
+			*/
+
+      // Кнопки "вліво/вправо"
+      navigation: {
+        prevEl: ".swiper-button-prev",
+        nextEl: ".swiper-button-next",
+      },
+
+      // Брейкпоінти
+      breakpoints: {
+        320: {
+          slidesPerView: 1,
+          spaceBetween: 0,
+          autoHeight: true,
+        },
+        768: {
+          slidesPerView: 1,
+          spaceBetween: 20,
+        },
+        992: {
+          slidesPerView: 1,
+          spaceBetween: 20,
+        },
+        1268: {
+          slidesPerView: 1,
           spaceBetween: 30,
         },
       },

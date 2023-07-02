@@ -6,8 +6,166 @@
       @@include('html/_header.htm',{})
       <main class="page page_home">
         <section class="page__hero hero">
-          <div class="hero__image-ibg">
+          <div class="hero__slider swiper">
+            <div class="hero__wrapper swiper-wrapper">
+              <div class="hero__slide swiper-slide">
+                <div class="slide-hero__inner">
+                  <div class="slide-hero__image-ibg">
+                    <img src="@img/group photo/image.01.jpg" alt="GroupImage" />
+                  </div>
+                </div>
+              </div>
+              <div class="hero__slide swiper-slide">
+                <div class="slide-hero__inner">
+                  <div class="slide-hero__image-ibg">
+                    <img src="@img/group photo/image.02.jpg" alt="GroupImage" />
+                  </div>
+                </div>
+              </div>
+              <div class="hero__slide swiper-slide">
+                <div class="slide-hero__inner">
+                  <div class="slide-hero__image-ibg">
+                    <img src="@img/group photo/image.03.jpg" alt="GroupImage" />
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="slide-administration__dotts"></div>
+          </div>
+          <!-- <div class="hero__image-ibg">
             <img src="@img/hero/fon.jpg" alt="Image" />
+          </div> -->
+        </section>
+        <section class="page__administration administration">
+          <div class="administration__container">
+            <h2 class="administration__title title">Адміністрація</h2>
+            <div class="administration__slider swiper">
+              <div class="administration__wrapper swiper-wrapper">
+                <div class="administration__slide swiper-slide">
+                  <div class="slide-administration__inner">
+                    <div class="slide-administration__image-ibg">
+                      <img
+                        src="@img/endocrine-surgery/plug.02.jpg"
+                        alt="ImageDoctors"
+                      />
+                      <div class="slide-administration__wrap">
+                        <p class="slide-administration__name">
+                          Павленко Ганна Петрівна
+                        </p>
+                        <p class="slide-administration__job">Директор</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="administration__slide swiper-slide">
+                  <div class="slide-administration__inner">
+                    <div class="slide-administration__image-ibg">
+                      <img
+                        src="@img/endocrine-surgery/plug.02.jpg"
+                        alt="ImageDoctors"
+                      />
+                      <div class="slide-administration__wrap">
+                        <p class="slide-administration__name">
+                          Скорик Ольга Петрівна
+                        </p>
+                        <p class="slide-administration__job">
+                          Помічник директора
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="administration__slide swiper-slide">
+                  <div class="slide-administration__inner">
+                    <div class="slide-administration__image-ibg">
+                      <img
+                        src="@img/endocrine-surgery/image.01.jpg"
+                        alt="ImageDoctors"
+                      />
+                      <div class="slide-administration__wrap">
+                        <p class="slide-administration__name">
+                          Демидюк Олександр Павлович
+                        </p>
+                        <p class="slide-administration__job">
+                          Заступник директора з хірургічної допомоги
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="administration__slide swiper-slide">
+                  <div class="slide-administration__inner">
+                    <div class="slide-administration__image-ibg">
+                      <img
+                        src="@img/administration/image.04.jpg"
+                        alt="ImageDoctors"
+                      />
+                      <div class="slide-administration__wrap">
+                        <p class="slide-administration__name">
+                          Кирилюк Катерина Миколаївна
+                        </p>
+                        <p class="slide-administration__job">
+                          Заступник директора з медичної допомоги
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="administration__slide swiper-slide">
+                  <div class="slide-administration__inner">
+                    <div class="slide-administration__image-ibg">
+                      <img
+                        src="@img/endocrine-surgery/plug.02.jpg"
+                        alt="ImageDoctors"
+                      />
+                      <div class="slide-administration__wrap">
+                        <p class="slide-administration__name">
+                          Риженко Марина Аркадіївна
+                        </p>
+                        <p class="slide-administration__job">
+                          Головний економіст
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="administration__slide swiper-slide">
+                  <div class="slide-administration__inner">
+                    <div class="slide-administration__image-ibg">
+                      <img
+                        src="@img/endocrine-surgery/plug.02.jpg"
+                        alt="ImageDoctors"
+                      />
+                      <div class="slide-administration__wrap">
+                        <p class="slide-administration__name">
+                          Дузь-Крятченко Тетяна Сергіївна
+                        </p>
+                        <p class="slide-administration__job">
+                          Головна медична сестра
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="administration__slide swiper-slide">
+                  <div class="slide-administration__inner">
+                    <div class="slide-administration__image-ibg">
+                      <img
+                        src="@img/endocrine-surgery/plug.02.jpg"
+                        alt="ImageDoctors"
+                      />
+                      <div class="slide-administration__wrap">
+                        <p class="slide-administration__name">
+                          Алгініна Єлизавета Володимирівна
+                        </p>
+                        <p class="slide-administration__job"></p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="slide-administration__dotts"></div>
+            </div>
           </div>
         </section>
         <section class="page__advantages advantages">
@@ -89,89 +247,7 @@
             </ul>
           </div>
         </section>
-        <section class="page__reviews reviews">
-          <div class="reviews__container">
-            <h2 class="reviews__title title">Відгуки клієнтів</h2>
-            <div class="reviews__slider swiper">
-              <div class="reviews__wrapper swiper-wrapper">
-                <div class="reviews__slide swiper-slide">
-                  <div class="slide-reviews__inner">
-                    <h3 class="slide-reviews__title">Мілана</h3>
-                    <a
-                      data-video-id="QYwI3LRCnRE"
-                      href="https://www.youtube.com/embed/QYwI3LRCnRE"
-                      class="slide-reviews__image-ibg"
-                    >
-                      <!-- <iframe
-                        width="560"
-                        height="315"
-                        src="https://www.youtube.com/embed/QYwI3LRCnRE"
-                        title="YouTube video player"
-                        frameborder="0"
-                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                        allowfullscreen
-                      ></iframe> -->
-                      <img src="@img/reviews/plug.01.png" alt="ClientImage" />
-                    </a>
-                    <a href="" class="slide-reviews__link">Боріс Джонсон</a>
-                    <a href="" class="slide-reviews__link">Підтяжка грудей</a>
-                  </div>
-                </div>
-                <div class="reviews__slide swiper-slide">
-                  <div class="slide-reviews__inner">
-                    <h3 class="slide-reviews__title">Мілана</h3>
-                    <a href="" class="slide-reviews__image-ibg">
-                      <img src="@img/reviews/plug.02.jpg" alt="ClientImage" />
-                    </a>
-                    <a href="" class="slide-reviews__link">Боріс Джонсон</a>
-                    <a href="" class="slide-reviews__link">Підтяжка грудей</a>
-                  </div>
-                </div>
-                <div class="reviews__slide swiper-slide">
-                  <div class="slide-reviews__inner">
-                    <h3 class="slide-reviews__title">Мілана</h3>
-                    <a href="" class="slide-reviews__image-ibg">
-                      <img src="@img/reviews/plug.03.png" alt="ClientImage" />
-                    </a>
-                    <a href="" class="slide-reviews__link">Боріс Джонсон</a>
-                    <a href="" class="slide-reviews__link">Підтяжка грудей</a>
-                  </div>
-                </div>
-                <div class="reviews__slide swiper-slide">
-                  <div class="slide-reviews__inner">
-                    <h3 class="slide-reviews__title">Мілана</h3>
-                    <a href="" class="slide-reviews__image-ibg">
-                      <img src="@img/reviews/plug.04.png" alt="ClientImage" />
-                    </a>
-                    <a href="" class="slide-reviews__link">Боріс Джонсон</a>
-                    <a href="" class="slide-reviews__link">Підтяжка грудей</a>
-                  </div>
-                </div>
-                <div class="reviews__slide swiper-slide">
-                  <div class="slide-reviews__inner">
-                    <h3 class="slide-reviews__title">Мілана</h3>
-                    <a href="" class="slide-reviews__image-ibg">
-                      <img src="@img/reviews/plug.05.png" alt="ClientImage" />
-                    </a>
-                    <a href="" class="slide-reviews__link">Боріс Джонсон</a>
-                    <a href="" class="slide-reviews__link">Підтяжка грудей</a>
-                  </div>
-                </div>
-                <div class="reviews__slide swiper-slide">
-                  <div class="slide-reviews__inner">
-                    <h3 class="slide-reviews__title">Мілана</h3>
-                    <a href="" class="slide-reviews__image-ibg">
-                      <img src="@img/reviews/plug.06.jpg" alt="ClientImage" />
-                    </a>
-                    <a href="" class="slide-reviews__link">Боріс Джонсон</a>
-                    <a href="" class="slide-reviews__link">Підтяжка грудей</a>
-                  </div>
-                </div>
-              </div>
-              <div class="slide-reviews__dotts"></div>
-            </div>
-          </div>
-        </section>
+
         <!-- <section class="page__services services">
           <div class="services__container">
             <h2 class="services__title title">
@@ -283,7 +359,7 @@
                   </div>
                 </div>
               </div>
-              <div class="slide-reviews__dotts"></div>
+              <div class="slide-administration__dotts"></div>
             </div>
           </div>
         </section>

@@ -66,6 +66,25 @@
     }
   }
 
+  // .branchone__phones
+
+  &__phones {
+    display: flex;
+    flex-direction: column;
+    gap: rem(10);
+  }
+  // ."branchone__phone
+
+  &__phone {
+    font-family: sans-serif;
+    transition: 0.3s ease 0s;
+
+    @media (any-hover: hover) {
+      &:hover {
+        color: gray;
+      }
+    }
+  }
   // .branchone__inner
 
   &__inner {
@@ -84,6 +103,40 @@
     }
   }
 
+  // .branchone__images
+
+  &__images {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: rem(20);
+  }
+
+  // .branchone__image-gallery-ibg
+
+  &__image-gallery-ibg {
+    padding-bottom: percent(270, 1180);
+    flex: 0 0 percent(270, 1180);
+    overflow: hidden;
+    border-radius: rem(10);
+    transition: opacity 0.8s ease 0s;
+
+    img {
+      overflow: hidden;
+      max-width: 100%;
+      border-radius: rem(10);
+      transition: transform 0.8s ease 0s;
+    }
+    @media (any-hover: hover) {
+      &:hover {
+        overflow: hidden;
+        border-radius: rem(10);
+        img {
+          transform: scale(1.05);
+        }
+      }
+    }
+  }
   // .branchone__image
 
   &__image-ibg {

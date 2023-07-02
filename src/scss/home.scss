@@ -1,18 +1,18 @@
 //====================================================================================================
 
-.hero {
-  padding-top: rem(20);
-  @media (max-width: $mobile) {
-    @include adaptiveValue("padding-top", 100, 70);
-  }
-
+.slide-hero {
   // .hero__image-ibg
 
   &__image-ibg {
-    padding-bottom: percent(500, 686);
-    flex: 0 0 percent(300, 686);
+    padding-bottom: percent(400, 686);
+    flex: 0 0 percent(400, 686);
     img {
       max-width: 100%;
+    }
+
+    @media (max-width: $mobile) {
+      padding-bottom: percent(500, 686);
+      flex: 0 0 percent(500, 686);
     }
   }
 }
@@ -91,11 +91,11 @@
 
 //========================================================================================================================================================
 
-.reviews {
+.administration {
   @include adaptiveValue("padding-top", 50, 30);
   @include adaptiveValue("padding-bottom", 50, 30);
   background-color: #f4f4f4;
-  // .reviews__container
+  // .administration__container
 
   &__container {
   }
@@ -109,24 +109,24 @@
     }
   }
 
-  // .reviews__slider
+  // .administration__slider
 
   &__slider {
   }
 
-  // .reviews__wrapper
+  // .administration__wrapper
 
   &__wrapper {
   }
 
-  // .reviews__slide
+  // .administration__slide
 
   &__slide {
   }
 }
 
-.slide-reviews {
-  // .slide-reviews__inner
+.slide-administration {
+  // .slide-administration__inner
 
   &__inner {
     position: relative;
@@ -137,16 +137,7 @@
     overflow: hidden;
   }
 
-  &__inner iframe {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    z-index: 2;
-  }
-
-  // .slide-reviews__title
+  // .slide-administration__title
 
   &__title {
     text-align: center;
@@ -157,33 +148,18 @@
     }
   }
 
-  // .slide-reviews__image-ibg
+  // .slide-administration__image-ibg
 
   &__image-ibg {
-    display: block;
-    position: relative;
-    padding-bottom: percent(885, 1080);
-    flex: 0 0 percent(885, 1080);
-    transition: all 0.3s ease 0s;
-    &:hover::after {
-      content: "";
-      position: absolute;
-      top: 50%;
-      left: 50%;
-      width: rem(40);
-      height: rem(40);
-      transform: translate(-50%, -50%);
-      background-image: url(../img/reviews/icons/youtube.svg);
-    }
+    border-radius: rem(5);
+    overflow: hidden;
+    padding-bottom: percent(220, 160);
+    flex: 0 0 percent(220, 160);
 
     // overflow: hidden;
 
     &:not(:last-child) {
       margin-bottom: rem(10);
-    }
-    @media (max-width: $mobile) {
-      padding-bottom: percent(485, 768);
-      flex: 0 0 percent(485, 768);
     }
 
     img {
@@ -191,7 +167,39 @@
     }
   }
 
-  // .slide-reviews__link
+  // .slide-administration__wrap
+
+  &__wrap {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    background: rgba(241, 241, 245, 0.74);
+    border-radius: 0px 0px 5px 5px;
+    padding: rem(5);
+    width: 100%;
+    height: rem(80);
+  }
+
+  // .slide-administration__name
+
+  &__name {
+    color: $otherColor;
+    text-align: center;
+    font-weight: 600;
+    transition: color 0.5s ease 0s;
+    &:not(:last-child) {
+      margin-bottom: rem(10);
+    }
+  }
+
+  // .slide-administration__job
+
+  &__job {
+    color: black;
+    text-align: center;
+    font-size: rem(14);
+  }
+  // .slide-administration__link
 
   &__link {
     display: flex;
@@ -202,7 +210,7 @@
     }
   }
 
-  // .slide-reviews__dotts
+  // .slide-administration__dotts
 
   &__dotts {
     display: flex;
@@ -273,22 +281,22 @@
   }
 }
 
-.video-container {
-  display: none;
-  justify-content: center;
-  align-items: center;
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  z-index: 9999;
-  background-color: rgba(0, 0, 0, 0.8);
-}
+// .video-container {
+//   display: none;
+//   justify-content: center;
+//   align-items: center;
+//   position: absolute;
+//   top: 0;
+//   left: 0;
+//   width: 100%;
+//   height: 100%;
+//   z-index: 9999;
+//   background-color: rgba(0, 0, 0, 0.8);
+// }
 
-.video-container.active {
-  display: flex;
-}
+// .video-container.active {
+//   display: flex;
+// }
 
 //========================================================================================================================================================
 

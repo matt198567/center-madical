@@ -3,6 +3,8 @@
   // .page__hero
 
   &__hero {
+    padding-top: rem(100);
+    @include adaptiveValue("padding-bottom", 50, 30);
   }
 
   // .page__advantages
@@ -53,6 +55,11 @@
   // .page__information
 
   &__information {
+  }
+
+  // .page__vaccination
+
+  &__vaccination {
   }
 }
 

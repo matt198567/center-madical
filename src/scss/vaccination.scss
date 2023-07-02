@@ -1,0 +1,102 @@
+.vaccination {
+  @include adaptiveValue("padding-top", 130, 120);
+  @include adaptiveValue("padding-bottom", 130, 40);
+  background-color: #f4f4f4;
+  // .vaccination__container
+
+  &__container {
+  }
+
+  // .vaccination__title
+
+  &__title {
+    font-family: sans-serif;
+    text-align: center;
+    font-size: rem(24);
+
+    &:not(:last-child) {
+      @include adaptiveValue("margin-bottom", 40, 20);
+    }
+  }
+
+  // .vaccination__titletwo
+
+  &__titletwo {
+    font-size: rem(18);
+    font-weight: 600;
+    line-height: math.div(22, 18);
+
+    &:not(:last-child) {
+      @include adaptiveValue("margin-bottom", 10, 5);
+    }
+  }
+
+  // .vaccination__text
+
+  &__text {
+    font-family: sans-serif;
+    line-height: math.div(22, 18);
+    &_additional {
+      margin-bottom: rem(10);
+    }
+  }
+
+  // .vaccination__inner
+
+  &__inner {
+    // display: flex;
+    // align-items: center;
+    @include adaptiveValue("margin-bottom", 30, 10);
+  }
+
+  // .vaccination__phone
+
+  &__phone {
+    transition: 0.3s ease 0s;
+
+    @media (any-hover: hover) {
+      &:hover {
+        color: gray;
+      }
+    }
+  }
+
+  // .vaccination__phones
+
+  &__phones {
+    @include adaptiveValue("margin-bottom", 30, 10);
+    @media (max-width: $mobile) {
+      display: flex;
+      flex-direction: column;
+      gap: rem(10);
+    }
+  }
+  // .vaccination__title-other
+
+  &__title-other {
+    font-family: sans-serif;
+    line-height: math.div(22, 18);
+  }
+
+  // .vaccination__link
+
+  &__link {
+    font-size: rem(18);
+    color: $additionalColor;
+    transition: 0.3s ease 0s;
+
+    @media (any-hover: hover) {
+      &:hover {
+        color: $purpleColor;
+      }
+    }
+  }
+
+  // .vaccination__other-title
+
+  &__other-title {
+    font-weight: 600;
+  }
+}
+.title {
+}
