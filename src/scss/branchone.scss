@@ -54,6 +54,10 @@
     line-height: math.div(22, 18);
     font-size: rem(16);
 
+    span {
+      font-weight: 600;
+    }
+
     @media (max-width: $mobile) {
       //   font-family: Roboto;
       font-weight: 400;
@@ -152,6 +156,18 @@
     }
   }
 
+  // .branchone__lists
+
+  &__lists {
+    display: grid;
+    align-items: center;
+    // display: flex;
+    // align-items: center;
+    gap: rem(30);
+    @media (min-width: $tablet) {
+      grid-template-columns: 1fr percent(580, 1640);
+    }
+  }
   // .branchone__list
 
   &__list {
@@ -165,11 +181,28 @@
     }
   }
 
+  // .branchone__packages-ibg
+
+  &__packages {
+    display: flex;
+    justify-content: center;
+  }
+  // .branchone__package-ibg
+
+  &__package-ibg {
+    padding-bottom: percent(270, 400);
+    flex: 0 0 percent(270, 400);
+
+    img {
+      max-width: 100%;
+    }
+  }
   // .branchone__item
 
   &__item {
     &:not(:last-child) {
-      margin-bottom: rem(10);
+      @include adaptiveValue("margin-bottom", 30, 10);
+      // margin-bottom: rem(40);
     }
   }
 

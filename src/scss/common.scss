@@ -4,7 +4,7 @@
 
   &__hero {
     padding-top: rem(100);
-    @include adaptiveValue("padding-bottom", 50, 30);
+    // @include adaptiveValue("padding-bottom", 50, 30);
   }
 
   // .page__advantages
@@ -60,6 +60,11 @@
   // .page__vaccination
 
   &__vaccination {
+  }
+
+  // .page__news
+
+  &__news {
   }
 }
 

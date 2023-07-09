@@ -2,28 +2,45 @@
 <html lang="en">
   @@include('html/_head.htm',{ "title":"Публічна інформація" })
   <body>
+    <div id="loader" class="loader"></div>
     <div class="wrapper">
       @@include('html/_header.htm',{})
       <main class="page page_informations">
         <section class="page__information information">
           <div class="information__container">
             <h2 class="information__title title">Публічна інформація</h2>
-            <h3 class="information__headline">Графік прийому громадян</h3>
-            <ul class="information__list">
-              <li class="information__item">
-                Директор: Вт. з 10:00 до 11:00, Чт. з 14:00 до 15:00
-              </li>
-              <li class="information__item">
-                Заступник директора з економічних питань: Вт. з 10:00 до 12:00,
-                Чт. з 14:00 до 16:00
-              </li>
-            </ul>
-            <a
-              href="https://nazk.gov.ua/uk/zapobigannya-ta-vyyavlennya-koruptsiyi/"
-              class="information__link"
-              target="_blank"
-              >Запобігання корупції</a
-            >
+            <!-- <h3 class="information__headline">Графік прийому громадян</h3> -->
+            <div data-spollers data-one-spoller class="spollers">
+              <div class="spollers__item">
+                <button type="button" data-spoller class="spollers__title">
+                  Графік прийому громадян
+                </button>
+                <div class="spollers__body">
+                  <ul class="information__list">
+                    <li class="information__item">
+                      Директор: Вт. з 10:00 до 11:00, Чт. з 14:00 до 15:00
+                    </li>
+                    <li class="information__item">
+                      Заступник директора з економічних питань: Вт. з 10:00 до
+                      12:00, Чт. з 14:00 до 16:00
+                    </li>
+                  </ul>
+                </div>
+              </div>
+              <div class="spollers__item">
+                <button type="button" data-spoller class="spollers__title">
+                  Запобігання корупції
+                </button>
+                <div class="spollers__body">
+                  <a
+                    href="https://nazk.gov.ua/uk/zapobigannya-ta-vyyavlennya-koruptsiyi/"
+                    class="information__link"
+                    target="_blank"
+                    >Запобігання корупції</a
+                  >
+                </div>
+              </div>
+            </div>
           </div>
         </section>
       </main>

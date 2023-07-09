@@ -252,3 +252,9 @@ filterButtons.forEach((button) => {
 });
 
 //========================================================================================================================================================
+
+document.addEventListener("DOMContentLoaded", function () {
+  // После загрузки контента страницы скрываем лоадер
+  var loader = document.getElementById("loader");
+  loader.style.display = "none";
+});

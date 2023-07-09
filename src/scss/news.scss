@@ -1,0 +1,109 @@
+.news {
+  @include adaptiveValue("padding-top", 150, 120);
+  @include adaptiveValue("padding-bottom", 130, 40);
+  // .news__container
+
+  &__container {
+  }
+
+  // .news__title
+
+  &__title {
+    text-align: center;
+    @include adaptiveValue("margin-bottom", 40, 20);
+  }
+  // .news__inner
+
+  &__inner {
+    display: grid;
+    gap: rem(20);
+    background-color: #f4f4f4;
+    border-radius: rem(5);
+    padding: rem(15) 0 rem(15) rem(15);
+
+    @media (max-width: $tablet) {
+      padding: rem(15);
+    }
+
+    &:not(:last-child) {
+      @include adaptiveValue("margin-bottom", 20, 10);
+    }
+
+    @media (min-width: $tablet) {
+      grid-template-columns: 1fr percent(980, 1440);
+    }
+  }
+  // .news__date
+
+  &__date {
+    text-align: center;
+  }
+  // .news__image-ibg
+
+  &__image-ibg {
+    padding-bottom: percent(320, 280);
+    flex: 0 0 percent(320, 280);
+
+    // @media (max-width: $tablet) {
+    //   padding-bottom: percent(320, 280);
+    //   flex: 0 0 percent(320, 280);
+    // }
+  }
+
+  // .news__wrapp
+
+  &__wrapp {
+    @media (min-width: $tablet) {
+      max-height: rem(430);
+    }
+    overflow-y: scroll;
+  }
+
+  // .news__title-other
+
+  &__title-other {
+    font-weight: 600;
+    font-size: rem(22);
+    color: $otherColor;
+    line-height: math.div(22, 18);
+    &:not(:last-child) {
+      margin-bottom: rem(10);
+    }
+  }
+
+  // .news__text
+
+  &__text {
+    font-family: sans-serif;
+    line-height: math.div(22, 18);
+    font-size: rem(16);
+
+    @media (max-width: $mobile) {
+      font-weight: 400;
+    }
+    &_additional {
+      @include adaptiveValue("margin-bottom", 20, 10);
+    }
+    &_add {
+      @include adaptiveValue("margin-top", 20, 10);
+    }
+  }
+
+  // .news__list
+
+  &__list {
+    &:not(:last-child) {
+      margin-left: rem(30);
+    }
+  }
+
+  // .news__item
+
+  &__item {
+    list-style: disc;
+    color: $additionalColor;
+    &:not(:last-child) {
+      margin-bottom: rem(5);
+    }
+  }
+}

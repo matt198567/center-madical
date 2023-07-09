@@ -2,6 +2,7 @@
 <html lang="en">
   @@include('html/_head.htm',{ "title":"HomePage" })
   <body>
+    <div id="loader" class="loader"></div>
     <div class="wrapper">
       @@include('html/_header.htm',{})
       <main class="page page_home">
@@ -36,9 +37,98 @@
             <img src="@img/hero/fon.jpg" alt="Image" />
           </div> -->
         </section>
+        <section class="page__advantages advantages">
+          <div class="advantages__container">
+            <h2 class="advantages__title title">Чому обирають саме нас</h2>
+            <ul class="advantages__items items-advantages">
+              <li class="advantages__item item-advantages">
+                <div class="item-advantages__icon">
+                  <img src="img/advantages/icons.01.svg" alt="Icon" />
+                </div>
+                <h3 class="item-advantages__title">ДОСВІД</h3>
+                <p class="item-advantages__text text">
+                  Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                  Aliquam dolores facere beatae saepe soluta eligendi
+                  necessitatibus. Maxime nostrum corporis sint, odio commodi
+                  architecto est officiis qui consequatur odit doloribus magni.
+                </p>
+              </li>
+              <li class="advantages__item item-advantages">
+                <div class="item-advantages__icon">
+                  <img src="img/advantages/icons.02.svg" alt="Icon" />
+                </div>
+                <h3 class="item-advantages__title">БЕЗПЕКА</h3>
+                <p class="item-advantages__text text">
+                  Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                  Aliquam dolores facere beatae saepe soluta eligendi
+                  necessitatibus. Maxime nostrum corporis sint, odio commodi
+                  architecto est officiis qui consequatur odit doloribus magni.
+                </p>
+              </li>
+              <li class="advantages__item item-advantages">
+                <div class="item-advantages__icon">
+                  <img src="img/advantages/icons.03.svg" alt="Icon" />
+                </div>
+                <h3 class="item-advantages__title">РОЗТАШУВАННЯ</h3>
+                <p class="item-advantages__text text">
+                  Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                  Aliquam dolores facere beatae saepe soluta eligendi
+                  necessitatibus. Maxime nostrum corporis sint, odio commodi
+                  architecto est officiis qui consequatur odit doloribus magni.
+                </p>
+              </li>
+              <li class="advantages__item item-advantages">
+                <div class="item-advantages__icon">
+                  <img src="img/advantages/icons.04.svg" alt="Icon" />
+                </div>
+                <h3 class="item-advantages__title">КОМАНДА</h3>
+                <p class="item-advantages__text text">
+                  Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                  Aliquam dolores facere beatae saepe soluta eligendi
+                  necessitatibus. Maxime nostrum corporis sint, odio commodi
+                  architecto est officiis qui consequatur odit doloribus magni.
+                </p>
+              </li>
+              <li class="advantages__item item-advantages">
+                <div class="item-advantages__icon">
+                  <img src="img/advantages/icons.05.svg" alt="Icon" />
+                </div>
+                <h3 class="item-advantages__title">РОЗРОБКИ</h3>
+                <p class="item-advantages__text text">
+                  Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                  Aliquam dolores facere beatae saepe soluta eligendi
+                  necessitatibus. Maxime nostrum corporis sint, odio commodi
+                  architecto est officiis qui consequatur odit doloribus magni.
+                </p>
+              </li>
+              <li class="advantages__item item-advantages">
+                <div class="item-advantages__icon">
+                  <img src="img/advantages/icons.06.svg" alt="Icon" />
+                </div>
+                <h3 class="item-advantages__title">ЧАС</h3>
+                <p class="item-advantages__text text">
+                  Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                  Aliquam dolores facere beatae saepe soluta eligendi
+                  necessitatibus. Maxime nostrum corporis sint, odio commodi
+                  architecto est officiis qui consequatur odit doloribus magni.
+                </p>
+              </li>
+            </ul>
+          </div>
+        </section>
         <section class="page__administration administration">
           <div class="administration__container">
             <h2 class="administration__title title">Адміністрація</h2>
+            <div class="administration__controls">
+              <button
+                type="button"
+                class="administration__arrow administration__arrow_left _icon-chevron-thin-down"
+              ></button>
+              <button
+                type="button"
+                class="administration__arrow administration__arrow_right _icon-chevron-thin-down"
+              ></button>
+            </div>
             <div class="administration__slider swiper">
               <div class="administration__wrapper swiper-wrapper">
                 <div class="administration__slide swiper-slide">
@@ -164,90 +254,10 @@
                   </div>
                 </div>
               </div>
-              <div class="slide-administration__dotts"></div>
+              <!-- <div class="slide-administration__dotts"></div> -->
             </div>
           </div>
         </section>
-        <section class="page__advantages advantages">
-          <div class="advantages__container">
-            <h2 class="advantages__title title">Чому обирають саме нас</h2>
-            <ul class="advantages__items items-advantages">
-              <li class="advantages__item item-advantages">
-                <div class="item-advantages__icon">
-                  <img src="img/advantages/icons.01.svg" alt="Icon" />
-                </div>
-                <h3 class="item-advantages__title">ДОСВІД</h3>
-                <p class="item-advantages__text text">
-                  Lorem ipsum, dolor sit amet consectetur adipisicing elit.
-                  Aliquam dolores facere beatae saepe soluta eligendi
-                  necessitatibus. Maxime nostrum corporis sint, odio commodi
-                  architecto est officiis qui consequatur odit doloribus magni.
-                </p>
-              </li>
-              <li class="advantages__item item-advantages">
-                <div class="item-advantages__icon">
-                  <img src="img/advantages/icons.02.svg" alt="Icon" />
-                </div>
-                <h3 class="item-advantages__title">БЕЗПЕКА</h3>
-                <p class="item-advantages__text text">
-                  Lorem ipsum, dolor sit amet consectetur adipisicing elit.
-                  Aliquam dolores facere beatae saepe soluta eligendi
-                  necessitatibus. Maxime nostrum corporis sint, odio commodi
-                  architecto est officiis qui consequatur odit doloribus magni.
-                </p>
-              </li>
-              <li class="advantages__item item-advantages">
-                <div class="item-advantages__icon">
-                  <img src="img/advantages/icons.03.svg" alt="Icon" />
-                </div>
-                <h3 class="item-advantages__title">РОЗТАШУВАННЯ</h3>
-                <p class="item-advantages__text text">
-                  Lorem ipsum, dolor sit amet consectetur adipisicing elit.
-                  Aliquam dolores facere beatae saepe soluta eligendi
-                  necessitatibus. Maxime nostrum corporis sint, odio commodi
-                  architecto est officiis qui consequatur odit doloribus magni.
-                </p>
-              </li>
-              <li class="advantages__item item-advantages">
-                <div class="item-advantages__icon">
-                  <img src="img/advantages/icons.04.svg" alt="Icon" />
-                </div>
-                <h3 class="item-advantages__title">КОМАНДА</h3>
-                <p class="item-advantages__text text">
-                  Lorem ipsum, dolor sit amet consectetur adipisicing elit.
-                  Aliquam dolores facere beatae saepe soluta eligendi
-                  necessitatibus. Maxime nostrum corporis sint, odio commodi
-                  architecto est officiis qui consequatur odit doloribus magni.
-                </p>
-              </li>
-              <li class="advantages__item item-advantages">
-                <div class="item-advantages__icon">
-                  <img src="img/advantages/icons.05.svg" alt="Icon" />
-                </div>
-                <h3 class="item-advantages__title">РОЗРОБКИ</h3>
-                <p class="item-advantages__text text">
-                  Lorem ipsum, dolor sit amet consectetur adipisicing elit.
-                  Aliquam dolores facere beatae saepe soluta eligendi
-                  necessitatibus. Maxime nostrum corporis sint, odio commodi
-                  architecto est officiis qui consequatur odit doloribus magni.
-                </p>
-              </li>
-              <li class="advantages__item item-advantages">
-                <div class="item-advantages__icon">
-                  <img src="img/advantages/icons.06.svg" alt="Icon" />
-                </div>
-                <h3 class="item-advantages__title">ЧАС</h3>
-                <p class="item-advantages__text text">
-                  Lorem ipsum, dolor sit amet consectetur adipisicing elit.
-                  Aliquam dolores facere beatae saepe soluta eligendi
-                  necessitatibus. Maxime nostrum corporis sint, odio commodi
-                  architecto est officiis qui consequatur odit doloribus magni.
-                </p>
-              </li>
-            </ul>
-          </div>
-        </section>
-
         <!-- <section class="page__services services">
           <div class="services__container">
             <h2 class="services__title title">
