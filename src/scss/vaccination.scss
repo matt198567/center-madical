@@ -1,6 +1,6 @@
 .vaccination {
   @include adaptiveValue("padding-top", 130, 120);
-  @include adaptiveValue("padding-bottom", 130, 40);
+  @include adaptiveValue("padding-bottom", 90, 40);
   background-color: #f4f4f4;
   // .vaccination__container
 
@@ -10,7 +10,7 @@
   // .vaccination__title
 
   &__title {
-    font-family: sans-serif;
+    // font-family: sans-serif;
     text-align: center;
     font-size: rem(24);
 
@@ -34,7 +34,7 @@
   // .vaccination__text
 
   &__text {
-    font-family: sans-serif;
+    // font-family: sans-serif;
     line-height: math.div(22, 18);
     &_additional {
       margin-bottom: rem(10);
@@ -46,7 +46,7 @@
   &__inner {
     // display: flex;
     // align-items: center;
-    @include adaptiveValue("margin-bottom", 30, 10);
+    @include adaptiveValue("margin-bottom", 20, 10);
   }
 
   // .vaccination__phone
@@ -64,7 +64,7 @@
   // .vaccination__phones
 
   &__phones {
-    @include adaptiveValue("margin-bottom", 30, 10);
+    @include adaptiveValue("margin-bottom", 20, 10);
     @media (max-width: $mobile) {
       display: flex;
       flex-direction: column;
@@ -74,7 +74,7 @@
   // .vaccination__title-other
 
   &__title-other {
-    font-family: sans-serif;
+    // font-family: sans-serif;
     line-height: math.div(22, 18);
   }
 

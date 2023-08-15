@@ -31,18 +31,92 @@
   // .information__list
 
   &__list {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(rem(280), 1fr));
+    // padding: 0;
+    // padding: 0;
+    // display: flex;
+    // flex-wrap: wrap;
     &:not(:last-child) {
       @include adaptiveValue("margin-bottom", 20, 10);
+    }
+  }
+
+  // .information__subtitle
+
+  &__subtitle {
+    font-weight: 600;
+    font-size: rem(22);
+    color: $otherColor;
+    line-height: math.div(22, 18);
+    &:not(:last-child) {
+      margin-bottom: rem(10);
+    }
+  }
+
+  // .information__text
+
+  &__text {
+    line-height: math.div(22, 18);
+    font-size: rem(16);
+    &:not(:last-child) {
+      margin-bottom: rem(5);
+    }
+    &_additional {
+      margin-top: rem(20);
+    }
+  }
+
+  // .information__attention
+
+  &__attention {
+    font-weight: bold;
+    @include adaptiveValue("margin-bottom", 20, 10);
+  }
+  // .information__inner
+
+  &__inner {
+    &:not(:last-child) {
+      margin-bottom: rem(5);
+    }
+  }
+
+  // .information__mail
+
+  &__mail {
+    line-height: math.div(22, 18);
+    font-size: rem(16);
+  }
+  // .information__schedule
+
+  &__schedule {
+    font-weight: 600;
+    font-size: rem(22);
+    color: $otherColor;
+    line-height: math.div(22, 18);
+    &:not(:last-child) {
+      @include adaptiveValue("margin-top", 25, 10);
+      @include adaptiveValue("margin-bottom", 30, 10);
     }
   }
 
   // .information__item
 
   &__item {
-    list-style: disc;
-    font-family: sans-serif;
+    // list-style: disc;
+    // font-family: sans-serif;
     line-height: math.div(22, 18);
     font-size: rem(16);
+
+    // flex: 0 0 calc(25% - 15px);
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin-right: 15px;
+    margin-bottom: 15px;
+    padding: 10px;
+    border: 1px solid #ccc;
+
     &:not(:last-child) {
       @include adaptiveValue("margin-bottom", 15, 5);
     }
@@ -56,7 +130,7 @@
 
   &__link {
     color: $additionalColor;
-    font-size: rem(16);
+    font-size: rem(18);
     font-weight: 600;
     transition: color 0.3s ease 0s;
 
@@ -64,6 +138,111 @@
       &:hover {
         color: #1cb8a3c0;
       }
+    }
+  }
+
+  // .information__public-list
+
+  &__public-list {
+    margin-left: rem(20);
+  }
+  // .information__public-item
+
+  &__public-item {
+    color: $additionalColor;
+    list-style: disc;
+    transition: color 0.3s ease 0s;
+    &:not(:last-child) {
+      margin-bottom: rem(10);
+    }
+
+    @media (any-hover: hover) {
+      &:hover {
+        color: #1cb8a3c0;
+      }
+    }
+  }
+  // .information__subtext
+
+  &__subtext {
+    // margin: 0;
+    font-weight: bold;
+    &:not(:last-child) {
+      margin-bottom: rem(5);
+    }
+  }
+
+  // .information__subtext-pro
+
+  &__subtext-pro {
+    font-weight: bold;
+  }
+
+  // .information__phone
+
+  &__phone {
+    font-size: rem(16);
+    margin-top: auto;
+    transition: 0.3s ease 0s;
+
+    @media (any-hover: hover) {
+      &:hover {
+        color: gray;
+      }
+    }
+  }
+
+  // .information__phone-pro
+
+  &__phone-pro {
+  }
+
+  // .information__table
+  &__table {
+    width: 100%;
+    border-collapse: collapse; /* Объединение границ ячеек для линий разметки */
+
+    @media (max-width: $mobile) {
+      font-size: rem(8);
+    }
+  }
+
+  &__table th,
+  &__table td {
+    border: 1px solid #ccc; /* Граница для всех ячеек и заголовков */
+    padding: 8px; /* Отступ внутри ячеек */
+    text-align: left; /* Выравнивание текста */
+  }
+
+  &__table th {
+    background-color: #f2f2f2; /* Цвет фона для заголовков */
+  }
+  // .information__number
+
+  // .information__model-cell
+
+  &__model-cell {
+    // position: relative;
+  }
+
+  // .information__model-dividers
+
+  &__model-dividers {
+  }
+  // .information__model-divider
+  &__model-divider {
+    display: block;
+    border-bottom: 1px solid #ccc; /* Цвет и стиль горизонтальной полосы */
+    height: rem(4); /* Высота полосы (настраивайте по необходимости) */
+    width: 100%;
+    margin: rem(5) 0; /* Отступы между полосами (настраивайте по необходимости) */
+
+    &_next {
+      margin: rem(15) 0;
+    }
+
+    &_add {
+      margin: rem(80) 0;
     }
   }
 }

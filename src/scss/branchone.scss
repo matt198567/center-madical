@@ -18,7 +18,7 @@
   // .branchone__titletwo
 
   &__titletwo {
-    font-family: sans-serif;
+    // font-family: sans-serif;
     font-weight: 600;
     font-size: rem(18);
     color: $otherColor;
@@ -50,7 +50,7 @@
   // .branchone__text
 
   &__text {
-    font-family: sans-serif;
+    // font-family: sans-serif;
     line-height: math.div(22, 18);
     font-size: rem(16);
 
@@ -63,10 +63,10 @@
       font-weight: 400;
     }
     &_additional {
-      @include adaptiveValue("margin-bottom", 20, 10);
+      @include adaptiveValue("margin-bottom", 10, 5);
     }
     &_add {
-      @include adaptiveValue("margin-top", 20, 10);
+      @include adaptiveValue("margin-top", 10, 5);
     }
   }
 
@@ -80,7 +80,7 @@
   // ."branchone__phone
 
   &__phone {
-    font-family: sans-serif;
+    // font-family: sans-serif;
     transition: 0.3s ease 0s;
 
     @media (any-hover: hover) {
@@ -171,7 +171,7 @@
   // .branchone__list
 
   &__list {
-    font-family: sans-serif;
+    // font-family: sans-serif;
     font-size: rem(16);
     @include adaptiveValue("margin-top", 20, 10);
     @include adaptiveValue("margin-left", 40, 20);
@@ -201,7 +201,7 @@
 
   &__item {
     &:not(:last-child) {
-      @include adaptiveValue("margin-bottom", 30, 10);
+      @include adaptiveValue("margin-bottom", 10, 5);
       // margin-bottom: rem(40);
     }
   }

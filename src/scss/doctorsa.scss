@@ -27,6 +27,7 @@
 
   &__list {
     display: flex;
+    justify-content: center;
     flex-wrap: wrap;
     gap: rem(3);
 
@@ -56,6 +57,12 @@
         background-color: $additionalColor;
       }
     }
+  }
+
+  // .doctors__btn-other
+
+  &__btn-other {
+    padding: rem(20) rem(24.3);
   }
   // .doctors__item
 
@@ -251,7 +258,7 @@
   // .card__inner
 
   &__inner {
-    font-family: sans-serif;
+    // font-family: sans-serif;
     display: flex;
     flex-direction: column;
     text-align: center;

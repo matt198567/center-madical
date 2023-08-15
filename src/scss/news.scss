@@ -50,6 +50,12 @@
     // }
   }
 
+  // .news__image-ibg-other
+
+  &__image-ibg-other {
+    padding-bottom: percent(280, 280);
+    flex: 0 0 percent(280, 280);
+  }
   // .news__wrapp
 
   &__wrapp {
@@ -74,7 +80,7 @@
   // .news__text
 
   &__text {
-    font-family: sans-serif;
+    // font-family: sans-serif;
     line-height: math.div(22, 18);
     font-size: rem(16);
 
@@ -89,6 +95,17 @@
     }
   }
 
+  // .news__link
+
+  &__link {
+    color: #1061be;
+    transition: color 0.3s ease 0s;
+    @media (any-hover: hover) {
+      &:hover {
+        color: #3283e0;
+      }
+    }
+  }
   // .news__list
 
   &__list {

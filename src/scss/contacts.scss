@@ -41,7 +41,7 @@
   // .contacts__text
 
   &__text {
-    font-family: sans-serif;
+    // font-family: sans-serif;
     @media (max-width: $mobile) {
       &:nth-of-type(2) {
         display: none;
@@ -59,7 +59,7 @@
   // .contacts__link
 
   &__link {
-    font-family: Roboto;
+    // font-family: Roboto;
     font-weight: 400;
     white-space: nowrap;
     transition: 0.3s ease 0s;

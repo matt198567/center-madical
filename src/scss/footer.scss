@@ -55,7 +55,7 @@
   // .main-footer__text
 
   &__text {
-    font-family: sans-serif;
+    // font-family: sans-serif;
     line-height: math.div(22, 18);
     &:not(:last-child) {
       margin-bottom: rem(10);
@@ -75,7 +75,7 @@
   // .main-footer__link
 
   &__link {
-    font-family: sans-serif;
+    // font-family: sans-serif;
     transition: color 0.3s ease 0s;
     @media (any-hover: hover) {
       &:hover {
@@ -198,7 +198,7 @@
   // .main-footer__scroll
 
   &__scroll {
-    font-family: sans-serif;
+    // font-family: sans-serif;
     transition: color 0.3s ease 0s;
     @media (any-hover: hover) {
       &:hover {

@@ -8,7 +8,7 @@
   width: 100%;
   z-index: 100;
   // background-color: #817cc4c7;
-  background-color: #00d6c1d0;
+  background-color: #00d6c1;
   //   min-height: rem(80);
   //   @media (max-width: $mobile) {
   //     min-height: 120px;
@@ -149,7 +149,7 @@
   // .menu__link
 
   &__link {
-    font-family: sans-serif;
+    // font-family: sans-serif;
     display: block;
     position: relative;
     font-weight: 500;
@@ -200,6 +200,31 @@
     }
   }
 
+  // .menu__button
+
+  &__button {
+    @media (max-width: $tablet) {
+      display: none;
+    }
+
+    color: #34495e;
+    text-align: center;
+    font-size: rem(14);
+    line-height: math.div(17, 14);
+    font-weight: 500;
+    border: rem(1) solid #607d8b;
+    border-radius: rem(8);
+    padding: rem(10) rem(20);
+    transition: color 0.5s ease 0s;
+
+    @media (any-hover: hover) {
+      &:hover {
+        color: #fff;
+        background-color: $additionalColor;
+        border: rem(1) solid $additionalColor;
+      }
+    }
+  }
   // .menu__icon
 
   &__icon {
