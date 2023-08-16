@@ -203,8 +203,8 @@
   // .menu__button
 
   &__button {
-    @media (max-width: $tablet) {
-      display: none;
+    @media (max-width: $mobile) {
+      padding: rem(20) rem(20);
     }
 
     color: #34495e;
@@ -244,6 +244,10 @@
 }
 
 .phones-header {
+  @media (max-width: $tablet) {
+    display: none;
+  }
+
   // .phones-header__items
 
   &__items {

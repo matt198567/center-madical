@@ -1,6 +1,6 @@
 //====================================================================================================
 
-.slide-hero {
+.hero {
   // .hero__image-ibg
 
   &__image-ibg {
@@ -526,16 +526,18 @@
   &__image-ibg {
     display: block;
     position: relative;
-    padding-bottom: percent(240, 270);
-    flex: 0 0 percent(240, 270);
+    padding-bottom: percent(350, 270);
+    flex: 0 0 percent(350, 270);
+    // padding-bottom: percent(220, 160);
+    // flex: 0 0 percent(220, 160);
 
     &:not(:last-child) {
       margin-bottom: rem(10);
     }
-    @media (max-width: $mobile) {
-      padding-bottom: percent(485, 768);
-      flex: 0 0 percent(485, 768);
-    }
+    // @media (max-width: $mobile) {
+    //   padding-bottom: percent(485, 768);
+    //   flex: 0 0 percent(485, 768);
+    // }
 
     img {
       width: 100%;
