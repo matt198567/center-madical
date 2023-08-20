@@ -33,12 +33,19 @@
       grid-template-columns: 1fr percent(980, 1440);
     }
   }
+
+  // .news__inners
+
+  &__inners {
+    min-width: 0;
+  }
   // .news__date
 
   &__date {
     text-align: center;
+    margin-bottom: rem(10);
   }
-  // .news__image-ibg
+  // .slide-news__image-ibg
 
   &__image-ibg {
     padding-bottom: percent(320, 280);
@@ -93,6 +100,10 @@
     &_add {
       @include adaptiveValue("margin-top", 20, 10);
     }
+    &_bolt {
+      font-weight: 600;
+      font-size: rem(18);
+    }
   }
 
   // .news__link
@@ -123,4 +134,46 @@
       margin-bottom: rem(5);
     }
   }
+}
+.slide-news {
+  // .slide-news__inner
+
+  &__inner {
+  }
+
+  // .slide-news__image-ibg
+
+  &__image-ibg {
+    display: block;
+    position: relative;
+    // padding-bottom: percent(320, 760);
+    // flex: 0 0 percent(320, 760);
+    padding-bottom: percent(320, 270);
+    flex: 0 0 percent(320, 270);
+
+    &:not(:last-child) {
+      margin-bottom: rem(10);
+    }
+    // @media (max-width: $mobile) {
+    //   padding-bottom: percent(485, 768);
+    //   flex: 0 0 percent(485, 768);
+    // }
+
+    img {
+      width: 100%;
+    }
+  }
+}
+.news__wrapp::-webkit-scrollbar {
+  width: 10px; /* ширина всей полосы прокрутки */
+}
+
+.news__wrapp::-webkit-scrollbar-track {
+  background: #f4f4f4; /* цвет зоны отслеживания */
+}
+
+.news__wrapp::-webkit-scrollbar-thumb {
+  background-color: #b7b7b8; /* цвет бегунка */
+  border-radius: 20px; /* округлось бегунка */
+  border: 2px solid #ffffff; /* отступ вокруг бегунка */
 }

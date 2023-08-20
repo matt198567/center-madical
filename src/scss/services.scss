@@ -28,6 +28,7 @@
 
   &__list {
     display: flex;
+    justify-content: center;
     flex-wrap: wrap;
     gap: rem(3);
 
