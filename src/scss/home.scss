@@ -482,6 +482,7 @@
 
 .documentation {
   // @include adaptiveValue("padding-top", 50, 30);
+  position: relative;
   @include adaptiveValue("padding-bottom", 50, 30);
   background-color: #f4f4f4;
 
@@ -499,6 +500,58 @@
     }
   }
 
+  // .documentation__controls
+
+  &__controls {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 9;
+    gap: rem(16);
+    position: absolute;
+    left: rem(20);
+    right: rem(20);
+    bottom: 50%;
+    transform: translateY(50%);
+  }
+
+  // .documentation__arrow
+
+  &__arrow {
+    width: rem(40);
+    height: rem(40);
+    background-color: #eae6fe;
+    border-radius: rem(16);
+    color: $purpleColor;
+    transition: color 0.3s ease 0s;
+
+    @media (any-hover: hover) {
+      &:hover {
+        color: #fff;
+        background-color: $purpleColor;
+        border: rem(1) solid $purpleColor;
+      }
+    }
+
+    &.swiper-button-disabled {
+      opacity: 0.5;
+      cursor: default;
+      background: #eae6fe;
+      color: $purpleColor;
+    }
+
+    // .documentation__arrow_left
+
+    &_left {
+      transform: rotate(90deg);
+    }
+
+    // .documentation__arrow_right
+
+    &_right {
+      transform: rotate(-90deg);
+    }
+  }
   // .documentation__slider
 
   &__slider {
@@ -519,13 +572,14 @@
   // .slide-documentation__inner
 
   &__inner {
+    // position: relative;
   }
 
   // .slide-documentation__image-ibg
 
   &__image-ibg {
     display: block;
-    position: relative;
+    // position: relative;
     padding-bottom: percent(350, 270);
     flex: 0 0 percent(350, 270);
     // padding-bottom: percent(220, 160);

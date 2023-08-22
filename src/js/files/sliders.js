@@ -109,7 +109,7 @@ function initSliders() {
       // Вказуємо склас потрібного слайдера
       // Підключаємо модулі слайдера
       // для конкретного випадку
-      modules: [Navigation, Pagination, Autoplay],
+      modules: [Navigation],
       observer: true,
       observeParents: true,
       slidesPerView: 3,
@@ -132,10 +132,10 @@ function initSliders() {
 
       // Пагінація
 
-      pagination: {
-        el: ".slide-administration__dotts",
-        clickable: true,
-      },
+      // pagination: {
+      //   el: ".slide-administration__dotts",
+      //   clickable: true,
+      // },
 
       // Скроллбар
       /*
@@ -147,8 +147,8 @@ function initSliders() {
 
       // Кнопки "вліво/вправо"
       navigation: {
-        prevEl: ".swiper-button-prev",
-        nextEl: ".swiper-button-next",
+        prevEl: ".documentation__arrow_left",
+        nextEl: ".documentation__arrow_right",
       },
 
       // Брейкпоінти
