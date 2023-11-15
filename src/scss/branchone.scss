@@ -100,7 +100,7 @@
     align-items: center;
     gap: rem(10);
     @include adaptiveValue("margin-top", 60, 20);
-    @include adaptiveValue("margin-bottom", 60, 20);
+    @include adaptiveValue("margin-bottom", 30, 20);
 
     @media (min-width: $tablet) {
       grid-template-columns: 1fr percent(980, 1440);
@@ -212,6 +212,10 @@
     display: flex;
     align-items: center;
     gap: rem(5);
+
+    &-first {
+      @include adaptiveValue("margin-top", 30, 20);
+    }
 
     @media (max-width: $mobile) {
       flex-direction: column;

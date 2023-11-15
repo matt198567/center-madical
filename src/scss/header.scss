@@ -150,8 +150,8 @@
 
   &__link {
     // font-family: sans-serif;
-    display: block;
-    position: relative;
+    // display: block;
+    // position: relative;
     font-weight: 500;
     font-size: rem(24);
     line-height: math.div(22, 18);
@@ -353,6 +353,10 @@
       }
     }
   }
+}
+
+header a.active {
+  color: #0980f0;
 }
 
 //====================================================================================================

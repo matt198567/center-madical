@@ -1,12 +1,16 @@
 <!DOCTYPE html>
 <html lang="en">
-  @@include('html/_head.htm',{ "title":"Публічна інформація" })
+  @@include('html/_head.htm',{ "title":"Новини" })
   <body>
     <div id="loader" class="loader"></div>
     <div class="wrapper">
       @@include('html/_header.htm',{})
       <main class="page page_news">
-        <section class="page__news news">
+        <section
+          data-goto=".news"
+          data-watch="navigator"
+          class="page__news news"
+        >
           <div class="news__container">
             <h2 class="news__title title">Новини</h2>
             <div class="news__inner">

@@ -78,6 +78,8 @@ body {
   }
   // Сайт завантажений
   .loaded & {
+    opacity: 1;
+    transition: opacity 0.3s;
   }
 
   .loader {
@@ -209,3 +211,4 @@ body {
 @import "information";
 @import "vaccination";
 @import "news";
+@import "about";

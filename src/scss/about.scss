@@ -1,0 +1,13 @@
+.about {
+  @include adaptiveValue("padding-top", 130, 120);
+  @include adaptiveValue("padding-bottom", 90, 40);
+  // .about__container
+
+  &__container {
+  }
+
+  // .about__title
+
+  &__title {
+  }
+}

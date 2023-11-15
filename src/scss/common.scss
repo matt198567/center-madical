@@ -66,6 +66,11 @@
 
   &__news {
   }
+
+  // .page__about
+
+  &__about {
+  }
 }
 
 .text {
@@ -78,6 +83,15 @@
   line-height: 106.71%;
   letter-spacing: 0.5%;
   color: $mainColor;
+
+  transform: translate(0, 15%);
+  opacity: 0;
+  transition: transform 2s, opacity 2s;
+
+  ._watcher-view & {
+    transform: translate(0, 0);
+    opacity: 1;
+  }
   @include adaptiveValue("font-size", 40, 30);
   // &_s64 {
   //   @include adaptiveValue("font-size", 64, 40);

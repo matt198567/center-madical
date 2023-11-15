@@ -258,3 +258,19 @@ document.addEventListener("DOMContentLoaded", function () {
   var loader = document.getElementById("loader");
   loader.style.display = "none";
 });
+
+// ============================================================================================================================================
+
+document.addEventListener("DOMContentLoaded", function () {
+  const currentLocation = window.location.href;
+
+  const navLinks = document.querySelectorAll("header a");
+
+  navLinks.forEach((link) => {
+    if (link.href === currentLocation) {
+      link.classList.add("active");
+    }
+  });
+});
+
+//========================================================================================================================================================

@@ -4,8 +4,10 @@
   // .hero__image-ibg
 
   &__image-ibg {
+    position: relative;
     padding-bottom: percent(400, 686);
     flex: 0 0 percent(400, 686);
+
     img {
       max-width: 100%;
     }
@@ -14,6 +16,39 @@
       padding-bottom: percent(500, 686);
       flex: 0 0 percent(500, 686);
     }
+  }
+
+  // .hero__text-container
+
+  &__text-container {
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.7);
+    width: 100%;
+    overflow: hidden;
+    height: rem(40);
+    padding: rem(5) rem(10);
+    color: #fff;
+  }
+
+  // .hero__running-text
+
+  &__running-text {
+    // font-weight: bold;
+    // text-transform: uppercase;
+    font-size: rem(24);
+    white-space: nowrap; /* Запрещаем перенос текста на новую строку */
+    overflow: hidden; /* Скрываем текст, который выходит за границы блока */
+    animation: runText 20s linear infinite; /* Применяем анимацию бегущей строки */
+  }
+}
+@keyframes runText {
+  0% {
+    transform: translateX(100%);
+  }
+  100% {
+    transform: translateX(-100%);
   }
 }
 
@@ -48,6 +83,13 @@
 
   &__item {
   }
+
+  // .advantages__list
+
+  &__list {
+    padding-left: rem(30);
+    // text-align: center;
+  }
 }
 
 .item-advantages {
@@ -55,6 +97,21 @@
   background-color: #f4f4f4;
   border-radius: rem(10);
   min-height: rem(302);
+
+  transform: translate(0, 15%);
+  opacity: 0;
+  transition: transform 0.5s, opacity 0.5s;
+
+  ._watcher-view & {
+    transform: translate(0, 0);
+    opacity: 1;
+    @for $i from 1 through 6 {
+      &:nth-child(#{$i}) {
+        $delay: $i * 0.3;
+        transition-delay: #{$delay}s;
+      }
+    }
+  }
 
   // .item-advantages__icon
 
@@ -85,7 +142,22 @@
 
   &__text {
     min-width: rem(270);
-    text-align: center;
+    line-height: math.div(22, 16);
+  }
+}
+
+.list-advantages {
+  margin-top: rem(20);
+  margin-bottom: rem(20);
+  // .list-advantages__item
+
+  &__item {
+    list-style: disc;
+    color: $additionalColor;
+
+    &:not(:last-child) {
+      margin-bottom: rem(10);
+    }
   }
 }
 
