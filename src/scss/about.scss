@@ -9,5 +9,119 @@
   // .about__title
 
   &__title {
+    &:not(:last-child) {
+      @include adaptiveValue("margin-bottom", 40, 20);
+    }
+
+    &-text {
+      &:not(:last-child) {
+        @include adaptiveValue("margin-bottom", 20, 10);
+      }
+      text-align: center;
+      font-weight: 600;
+    }
   }
+
+  // .about__wrapper
+
+  &__wrapper {
+  }
+
+  // .about__wrap
+
+  &__wrap {
+    display: flex;
+    justify-content: space-between;
+
+    @include adaptiveValue("margin-top", 90, 30);
+    @include adaptiveValue("padding-right", 50, 20);
+  }
+  // .about__text
+
+  &__text {
+    text-indent: rem(30);
+    line-height: math.div(22, 18);
+    font-size: rem(16);
+
+    // .about__text_additional
+
+    @media (max-width: $mobile) {
+      font-weight: 400;
+    }
+
+    &_additional {
+      @include adaptiveValue("margin-bottom", 10, 5);
+    }
+
+    &_add {
+      @include adaptiveValue("margin-top", 10, 5);
+    }
+
+    &_accent {
+      font-weight: 600;
+    }
+
+    // .about__text_first
+
+    &_first {
+      text-align: center;
+    }
+
+    // .about__text_other
+
+    &_other {
+      color: $otherColor;
+      font-weight: 600;
+    }
+
+    // .about__text_test
+
+    &_test {
+      text-indent: rem(5);
+    }
+  }
+
+  // .about__inner
+
+  &__inner {
+    margin-bottom: rem(5);
+  }
+
+  // .about__list
+
+  &__list {
+    @include adaptiveValue("padding-left", 60, 20);
+    @include adaptiveValue("margin-bottom", 10, 5);
+  }
+
+  // .about__item
+
+  &__item {
+    font-size: rem(14);
+    list-style: disc;
+
+    &:not(:last-child) {
+      margin-bottom: rem(5);
+    }
+
+    @media (max-width: $mobile) {
+      font-weight: 400;
+    }
+  }
+
+  // .about__image
+
+  &__image {
+    display: flex;
+    justify-content: center;
+    @include adaptiveValue("margin-bottom", 10, 5);
+    img {
+      max-width: 100%;
+    }
+  }
+}
+
+.about__inner .about__text:first-child {
+  color: $otherColor;
+  font-weight: 600;
 }
