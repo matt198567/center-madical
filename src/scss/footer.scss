@@ -37,7 +37,7 @@
   // .main-footer__address
 
   &__address {
-    &:not(:last-child) {
+    @media (max-width: $mobile) {
       margin-bottom: rem(20);
     }
   }
@@ -141,6 +141,9 @@
   // .main-footer__contacts
 
   &__contacts {
+    @media (max-width: $mobile) {
+      margin-bottom: rem(10);
+    }
   }
 
   // .main-footer__phone
@@ -170,6 +173,12 @@
     &:not(:last-child) {
       margin-bottom: rem(10);
     }
+    @media (max-width: $mobile) {
+      flex-grow: 1;
+      &:not(:last-child) {
+        border-right: 1px solid #000;
+      }
+    }
   }
 
   // .main-footer__icon
@@ -180,8 +189,8 @@
   // .main-footer__navigation
 
   &__navigation {
-    @media (max-width: $mobile) {
-      display: none;
+    @media (max-width: $tablet) {
+      // display: none;
     }
   }
 
@@ -193,6 +202,10 @@
   // .main-footer__list
 
   &__list {
+    @media (max-width: $mobile) {
+      display: flex;
+      justify-content: space-around;
+    }
   }
 
   // .main-footer__scroll

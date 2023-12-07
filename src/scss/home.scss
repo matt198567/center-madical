@@ -18,6 +18,12 @@
     }
   }
 
+  // .hero__text-inner
+
+  &__text-inner {
+    max-width: 100%;
+    overflow: hidden;
+  }
   // .hero__text-container
 
   &__text-container {
@@ -25,30 +31,34 @@
     top: 0;
     left: 0;
     background-color: rgba(0, 0, 0, 0.7);
-    width: 100%;
-    overflow: hidden;
+    width: 200%;
+    display: flex;
+    align-items: center;
+    // overflow: hidden;
+    // max-width: 60%;
     height: rem(40);
-    padding: rem(5) rem(10);
+    // padding: rem(5) rem(10);
     color: #fff;
+    animation: runText 10s linear infinite; /* Применяем анимацию бегущей строки */
   }
 
   // .hero__running-text
 
   &__running-text {
-    // font-weight: bold;
+    font-weight: bold;
+    width: 100%;
     // text-transform: uppercase;
     font-size: rem(24);
     white-space: nowrap; /* Запрещаем перенос текста на новую строку */
-    overflow: hidden; /* Скрываем текст, который выходит за границы блока */
-    animation: runText 20s linear infinite; /* Применяем анимацию бегущей строки */
+    // overflow: hidden; /* Скрываем текст, который выходит за границы блока */
   }
 }
 @keyframes runText {
   0% {
-    transform: translateX(100%);
+    transform: translateX(0%);
   }
   100% {
-    transform: translateX(-100%);
+    transform: translateX(-50%);
   }
 }
 
@@ -578,13 +588,17 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    z-index: 9;
+
     gap: rem(16);
     position: absolute;
     left: rem(20);
     right: rem(20);
     bottom: 50%;
     transform: translateY(50%);
+
+    @media (max-width: em(1290)) {
+      z-index: 2;
+    }
   }
 
   // .documentation__arrow
@@ -644,7 +658,7 @@
   // .slide-documentation__inner
 
   &__inner {
-    // position: relative;
+    position: relative;
   }
 
   // .slide-documentation__image-ibg
@@ -652,8 +666,8 @@
   &__image-ibg {
     display: block;
     // position: relative;
-    padding-bottom: percent(350, 270);
-    flex: 0 0 percent(350, 270);
+    padding-bottom: percent(380, 270);
+    flex: 0 0 percent(380, 270);
     // padding-bottom: percent(220, 160);
     // flex: 0 0 percent(220, 160);
 
