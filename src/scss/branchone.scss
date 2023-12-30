@@ -18,7 +18,6 @@
   // .branchone__titletwo
 
   &__titletwo {
-    // font-family: sans-serif;
     font-weight: 600;
     font-size: rem(18);
     color: $otherColor;
@@ -40,7 +39,7 @@
 
   &__headline {
     font-weight: 600;
-    font-size: rem(22);
+    @include adaptiveValue("font-size", 22, 18);
     color: $otherColor;
     line-height: math.div(22, 18);
     &:not(:last-child) {
@@ -82,6 +81,7 @@
   &__phone {
     // font-family: sans-serif;
     transition: 0.3s ease 0s;
+    @include adaptiveValue("font-size", 22, 16);
 
     @media (any-hover: hover) {
       &:hover {
@@ -219,6 +219,7 @@
 
     @media (max-width: $mobile) {
       flex-direction: column;
+      align-items: flex-start;
     }
 
     &:not(:last-child) {

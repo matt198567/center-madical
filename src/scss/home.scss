@@ -30,12 +30,14 @@
     position: absolute;
     top: 0;
     left: 0;
-    background-color: rgba(0, 0, 0, 0.7);
+    background-color: rgba(0, 214, 114, 0.7);
+    // background-color: rgba(0, 0, 0, 0.7);
     width: 200%;
     display: flex;
     align-items: center;
     // overflow: hidden;
     // max-width: 60%;
+
     height: rem(40);
     // padding: rem(5) rem(10);
     color: #fff;
@@ -47,10 +49,24 @@
   &__running-text {
     font-weight: bold;
     width: 100%;
-    // text-transform: uppercase;
-    font-size: rem(24);
+    text-transform: uppercase;
+    font-size: rem(26);
     white-space: nowrap; /* Запрещаем перенос текста на новую строку */
     // overflow: hidden; /* Скрываем текст, который выходит за границы блока */
+
+    @media (min-width: $mobile) {
+      span:first-child,
+      span:nth-child(2) {
+        margin-right: rem(60);
+      }
+    }
+
+    @media (max-width: $mobile) {
+      font-size: rem(20);
+      span:nth-child(2) {
+        margin-right: rem(6);
+      }
+    }
   }
 }
 @keyframes runText {
@@ -67,6 +83,7 @@
 .advantages {
   @include adaptiveValue("padding-top", 50, 30);
   @include adaptiveValue("padding-bottom", 50, 30);
+  background-color: $whiteColor;
   // .advantages__container
 
   &__container {
@@ -153,6 +170,10 @@
   &__text {
     min-width: rem(270);
     line-height: math.div(22, 16);
+
+    &--add {
+      margin-bottom: rem(10);
+    }
   }
 }
 
@@ -681,6 +702,13 @@
 
     img {
       width: 100%;
+      transition: scale 0.3s;
+
+      @media (any-hover: hover) {
+        &:hover {
+          scale: 1.03;
+        }
+      }
     }
   }
 }

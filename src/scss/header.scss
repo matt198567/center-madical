@@ -13,11 +13,26 @@
   //   @media (max-width: $mobile) {
   //     min-height: 120px;
   //   }
+
   // .header__container
 
   &__container {
   }
 
+  // .header__labels
+
+  &__labels {
+    text-align: center;
+    z-index: 5;
+  }
+
+  // .header__label
+
+  &__label {
+    color: #34495e;
+    font-size: rem(14);
+    font-weight: bold;
+  }
   // .header__logo
 
   &__logo {
@@ -107,17 +122,17 @@
     color: #34495e;
     transition: all 0.3s ease 0s;
 
-    @media (max-width: $mobile) {
-      color: #fff;
-      font-size: rem(24);
-      padding: rem(0) rem(0) rem(20) rem(0);
-    }
-
     @media (any-hover: hover) {
       &:hover {
         color: #0980f0;
         width: 100%;
       }
+    }
+
+    @media (max-width: $mobile) {
+      color: #fff;
+      font-size: rem(24);
+      padding: rem(0) rem(0) rem(20) rem(0);
     }
 
     ._spoller-init & {
@@ -126,6 +141,7 @@
       justify-content: space-between;
       gap: rem(3);
       width: 100%;
+
       &::after {
         content: "\e902";
         @extend %ic;
@@ -149,38 +165,23 @@
   // .menu__link
 
   &__link {
-    // font-family: sans-serif;
-    // display: block;
-    // position: relative;
     font-weight: 500;
-    font-size: rem(24);
+    font-size: rem(20);
+    @media (max-width: $tablet) {
+      font-size: rem(16);
+    }
     line-height: math.div(22, 18);
     transition: color 0.3s ease 0s;
 
     @media (min-width: $mobile) {
-      // color: $whiteColor;
       color: #34495e;
-      // &::after {
-      //   content: "";
-      //   position: absolute;
-      //   display: block;
-      //   width: 0;
-      //   height: 1px;
-      //   background-color: #0980f0;
-      //   transition: width 0.3s ease 0s;
-      //   bottom: 3px;
-      // }
-      // @media (any-hover: hover) {
-      //   &:hover::after {
-      //     width: 100%;
-      //   }
-      // }
     }
 
     @media (max-width: $mobile) {
       color: #fff;
       font-size: rem(24);
       padding: rem(0) rem(0) rem(15) rem(0);
+      // display: flex;
     }
     @media (any-hover: hover) {
       &:hover {
@@ -195,8 +196,10 @@
   &__social {
     display: flex;
     gap: rem(10);
-    @media (max-width: $tablet) {
-      display: none;
+    @media (max-width: $mobile) {
+      justify-content: center;
+      gap: rem(40);
+      margin-top: rem(50);
     }
   }
 
@@ -205,6 +208,7 @@
   &__button {
     @media (max-width: $mobile) {
       padding: rem(20) rem(20);
+      z-index: 5;
     }
 
     color: #34495e;
@@ -231,6 +235,11 @@
     font-size: rem(20);
     color: #34495e;
     transition: color 0.3s ease 0s;
+
+    @media (max-width: $mobile) {
+      font-size: rem(30);
+      color: $whiteColor;
+    }
     // .menu__icon-1
     &-1 {
       font-size: rem(24);
@@ -289,6 +298,11 @@
 
     &._spoller-active {
       rotate: (-180deg);
+    }
+    @media (any-hover: hover) {
+      &:hover {
+        color: #0980f0;
+      }
     }
   }
 

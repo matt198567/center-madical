@@ -1,6 +1,7 @@
 .news {
   @include adaptiveValue("padding-top", 150, 120);
   @include adaptiveValue("padding-bottom", 130, 40);
+  background-color: $whiteColor;
   // .news__container
 
   &__container {

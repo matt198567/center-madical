@@ -1,7 +1,6 @@
 .services {
   @include adaptiveValue("padding-top", 130, 120);
   @include adaptiveValue("padding-bottom", 130, 40);
-  background-color: #f4f4f4;
 
   // .services__container
 
@@ -20,7 +19,7 @@
 
   &__menu {
     &:not(:last-child) {
-      @include adaptiveValue("margin-bottom", 40, 20);
+      @include adaptiveValue("margin-bottom", 20, 10);
     }
   }
 
@@ -56,6 +55,15 @@
     &-add {
       font-weight: bold;
     }
+
+    &-info {
+      text-align: center;
+      font-weight: normal;
+      font-size: rem(12);
+      &:not(:last-child) {
+        @include adaptiveValue("margin-bottom", 20, 10);
+      }
+    }
   }
 
   // .services__link
@@ -76,6 +84,15 @@
       width: 100%;
     }
 
+    @media (max-width: $tablet) {
+      @media (any-hover: none) {
+        &:hover,
+        &.active {
+          background-color: $additionalColor;
+        }
+      }
+    }
+
     @media (any-hover: hover) {
       &:hover,
       &.active {
@@ -93,24 +110,5 @@
     border-bottom: 1px solid rgba(145, 145, 145, 0.1);
     padding: rem(20) rem(0);
     gap: rem(20);
-  }
-}
-
-.title {
-}
-.spollers {
-  // .spollers__item
-
-  &__item {
-  }
-
-  // .spollers__title
-
-  &__title {
-  }
-
-  // .spollers__body
-
-  &__body {
   }
 }

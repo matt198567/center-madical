@@ -80,6 +80,10 @@
 
 .text {
   line-height: math.div(27, 16);
+
+  &--add {
+    margin-bottom: rem(10);
+  }
 }
 
 .title {

@@ -51,6 +51,15 @@
       width: 100%;
     }
 
+    @media (max-width: $tablet) {
+      @media (any-hover: none) {
+        &:hover,
+        &.active {
+          background-color: $additionalColor;
+        }
+      }
+    }
+
     @media (any-hover: hover) {
       &:hover,
       &.active {
