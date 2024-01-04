@@ -7,6 +7,7 @@
   left: 0;
   width: 100%;
   z-index: 100;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
   // background-color: #817cc4c7;
   background-color: #00d6c1;
   //   min-height: rem(80);
@@ -30,7 +31,7 @@
 
   &__label {
     color: #34495e;
-    font-size: rem(14);
+    @include adaptiveValue("font-size", 14, 10);
     font-weight: bold;
   }
   // .header__logo
@@ -213,7 +214,8 @@
 
     color: #34495e;
     text-align: center;
-    font-size: rem(14);
+    @include adaptiveValue("font-size", 14, 12);
+    // font-size: rem(14);
     line-height: math.div(17, 14);
     font-weight: 500;
     border: rem(1) solid #607d8b;

@@ -1,7 +1,7 @@
 .contacts {
   @include adaptiveValue("padding-top", 130, 120);
   @include adaptiveValue("padding-bottom", 130, 40);
-  background-color: #f4f4f4;
+
   // .contacts__container
 
   &__container {

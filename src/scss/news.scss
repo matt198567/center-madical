@@ -22,6 +22,9 @@
     border-radius: rem(5);
     padding: rem(15) 0 rem(15) rem(15);
 
+    box-shadow: rem(0) rem(2) rem(10) rgba(0, 0, 0, 0.2),
+      rem(0) rem(2) rem(10) rgba(0, 0, 0, 0.2);
+
     @media (max-width: $tablet) {
       padding: rem(15);
     }
@@ -83,12 +86,15 @@
     &:not(:last-child) {
       margin-bottom: rem(10);
     }
+
+    @media (max-width: $mobile) {
+      text-align: center;
+    }
   }
 
   // .news__text
 
   &__text {
-    // font-family: sans-serif;
     line-height: math.div(22, 18);
     font-size: rem(16);
 
@@ -104,6 +110,9 @@
     &_bolt {
       font-weight: 600;
       font-size: rem(18);
+    }
+    &_paragraph {
+      text-indent: rem(20);
     }
   }
 

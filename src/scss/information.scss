@@ -1,8 +1,8 @@
 .information {
-  @include adaptiveValue("padding-top", 130, 40);
+  @include adaptiveValue("padding-top", 130, 120);
   @include adaptiveValue("padding-bottom", 130, 40);
   @media (max-width: $mobile) {
-    padding-top: rem(160);
+    // padding-top: rem(160);
   }
   // .information__container
 

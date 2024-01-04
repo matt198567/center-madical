@@ -129,6 +129,9 @@
   opacity: 0;
   transition: transform 0.5s, opacity 0.5s;
 
+  box-shadow: rem(0) rem(2) rem(10) rgba(0, 0, 0, 0.2),
+    rem(0) rem(2) rem(10) rgba(0, 0, 0, 0.2);
+
   ._watcher-view & {
     transform: translate(0, 0);
     opacity: 1;
@@ -236,6 +239,8 @@
     background-color: #eae6fe;
     border-radius: rem(16);
     color: $purpleColor;
+    box-shadow: rem(0) rem(2) rem(10) rgba(0, 0, 0, 0.2),
+      rem(0) rem(2) rem(10) rgba(0, 0, 0, 0.2);
     transition: color 0.3s ease 0s;
 
     @media (any-hover: hover) {
@@ -625,6 +630,8 @@
   // .documentation__arrow
 
   &__arrow {
+    box-shadow: rem(0) rem(2) rem(10) rgba(0, 0, 0, 0.2),
+      rem(0) rem(2) rem(10) rgba(0, 0, 0, 0.2);
     width: rem(40);
     height: rem(40);
     background-color: #eae6fe;
@@ -680,12 +687,15 @@
 
   &__inner {
     position: relative;
+    box-shadow: rem(0) rem(2) rem(10) rgba(0, 0, 0, 0.2),
+      rem(0) rem(2) rem(10) rgba(0, 0, 0, 0.2);
   }
 
   // .slide-documentation__image-ibg
 
   &__image-ibg {
     display: block;
+
     // position: relative;
     padding-bottom: percent(380, 270);
     flex: 0 0 percent(380, 270);
@@ -702,11 +712,13 @@
 
     img {
       width: 100%;
-      transition: scale 0.3s;
+      transition: all 0.3s;
 
       @media (any-hover: hover) {
         &:hover {
           scale: 1.03;
+          box-shadow: rem(0) rem(4) rem(20) rgba(0, 0, 0, 0.3),
+            rem(0) rem(4) rem(20) rgba(0, 0, 0, 0.3);
         }
       }
     }
