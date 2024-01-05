@@ -53,6 +53,10 @@
     line-height: math.div(22, 18);
     font-size: rem(16);
 
+    &_paragraph {
+      text-indent: rem(30);
+    }
+
     span {
       font-weight: 600;
     }
