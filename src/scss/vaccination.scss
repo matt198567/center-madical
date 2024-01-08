@@ -24,7 +24,7 @@
   &__titletwo {
     font-size: rem(18);
     font-weight: 600;
-    line-height: math.div(22, 18);
+    line-height: math.div(27, 18);
 
     &:not(:last-child) {
       @include adaptiveValue("margin-bottom", 10, 5);
@@ -34,8 +34,7 @@
   // .vaccination__text
 
   &__text {
-    // font-family: sans-serif;
-    line-height: math.div(22, 18);
+    line-height: math.div(27, 18);
     &_additional {
       margin-bottom: rem(10);
     }
@@ -74,8 +73,7 @@
   // .vaccination__title-other
 
   &__title-other {
-    // font-family: sans-serif;
-    line-height: math.div(22, 18);
+    line-height: math.div(27, 18);
   }
 
   // .vaccination__link

@@ -50,7 +50,7 @@
 
   &__text {
     // font-family: sans-serif;
-    line-height: math.div(22, 18);
+    line-height: math.div(27, 18);
     font-size: rem(16);
 
     &_paragraph {
@@ -204,6 +204,7 @@
   // .branchone__item
 
   &__item {
+    line-height: math.div(27, 18);
     &:not(:last-child) {
       @include adaptiveValue("margin-bottom", 10, 5);
       // margin-bottom: rem(40);

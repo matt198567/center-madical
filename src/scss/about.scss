@@ -40,7 +40,7 @@
 
   &__text {
     text-indent: rem(30);
-    line-height: math.div(22, 18);
+    line-height: math.div(27, 18);
     font-size: rem(16);
 
     // .about__text_additional
@@ -99,6 +99,7 @@
   &__item {
     font-size: rem(14);
     list-style: disc;
+    line-height: math.div(27, 18);
 
     &:not(:last-child) {
       margin-bottom: rem(5);

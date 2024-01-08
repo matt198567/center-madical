@@ -45,9 +45,13 @@
   // .services__text
 
   &__text {
-    // font-family: Roboto;
     font-weight: 400;
     font-size: rem(16);
+
+    @media (max-width: $tablet) {
+      line-height: math.div(27, 18);
+    }
+
     &:nth-of-type(2) {
       white-space: nowrap;
     }

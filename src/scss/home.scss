@@ -160,7 +160,7 @@
     font-size: rem(18);
     font-weight: 600;
     text-transform: uppercase;
-    line-height: math.div(22, 18);
+    line-height: math.div(27, 18);
     text-align: center;
 
     &:not(:last-child) {
@@ -172,7 +172,7 @@
 
   &__text {
     min-width: rem(270);
-    line-height: math.div(22, 16);
+    line-height: math.div(27, 18);
 
     &--add {
       margin-bottom: rem(10);
@@ -192,6 +192,7 @@
   &__item {
     list-style: disc;
     color: $additionalColor;
+    line-height: math.div(27, 18);
 
     &:not(:last-child) {
       margin-bottom: rem(10);

@@ -95,7 +95,7 @@
   // .news__text
 
   &__text {
-    line-height: math.div(22, 18);
+    line-height: math.div(27, 18);
     font-size: rem(16);
 
     @media (max-width: $mobile) {
@@ -138,6 +138,7 @@
   // .news__item
 
   &__item {
+    line-height: math.div(27, 18);
     list-style: disc;
     color: $additionalColor;
     &:not(:last-child) {

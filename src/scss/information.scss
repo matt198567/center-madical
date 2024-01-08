@@ -56,7 +56,7 @@
   // .information__text
 
   &__text {
-    line-height: math.div(22, 18);
+    line-height: math.div(27, 18);
     font-size: rem(16);
     &:not(:last-child) {
       margin-bottom: rem(5);
